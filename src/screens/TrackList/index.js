@@ -1,13 +1,17 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { Text, Button, StyleSheet } from "react-native";
 
 // import { Container } from './styles';
 
-export default function TrackList() {
+export default function TrackList({ navigation }) {
   return (
-    <View>
+    <>
       <Text>TrackList</Text>
-    </View>
+      <Button
+        title="Go to TrackDetail"
+        onPress={() => navigation.navigate("TrackDetail")}
+      />
+    </>
   );
 }
 
